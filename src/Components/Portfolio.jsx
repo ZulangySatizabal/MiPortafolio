@@ -19,9 +19,14 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
 
-const imageAltText = "desktop with books and laptop";
+import image from "../images/background-computer.jpg";
+
+const imageAltText = "computer background";
+
+// import image from "../images/design-desk.jpeg";
+
+// const imageAltText = "desktop with books and laptop";
 
 /**
  * Project list
@@ -31,43 +36,53 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Encriptador de Texto",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Web application that encrypts text. Made with html, css, javascript. With a focus on responsive design. As part of the first ONE Beginner in Programming Challenge, from the One program.",
+    url: "https://github.com/ZulangySatizabal/Encriptador-de-Texto",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Contador de clicks con React",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "As part of the basic React learning of the Learn React From Scratch course from FreeCodCamp in Spanish.",
+    url: "https://github.com/ZulangySatizabal/contador-de-clicks",
   },
   {
-    title: "My Resume Site",
+    title: "Apeperia",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Apeperia project from the course 'Responsive Layouts: Working with mobile layouts', by Alura LATAM.",
+    url: "https://github.com/ZulangySatizabal/Apperia",
   },
   {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "Fruta & Fruta",
+    description: "Alura Latam CSS architecture course.",
+    url: "https://github.com/ZulangySatizabal/Fruta-Fruto",
+  },
+  {
+    title: "Mini-Alura",
+    description: "Project with flexbox from the Alura One program",
+    url: "https://github.com/ZulangySatizabal/Mini-Alura/blob/main/README.md",
   },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
+      <img
+        className="background"
+        src={image}
+        alt={imageAltText}
+        style={{ opacity: "0.5", brightness: "0.4", contrast: "50%" }}
+      />
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+        {/* <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
             style={{ height: "90%", width: "100%", objectFit: "cover" }}
             alt={imageAltText}
           />
-        </div>
+        </div> */}
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
