@@ -23,9 +23,6 @@ import React from "react";
 import image from "../images/background-computer.jpg";
 
 const imageAltText = "computer background";
-
-// import image from "../images/design-desk.jpeg";
-
 // const imageAltText = "desktop with books and laptop";
 
 /**
@@ -83,6 +80,15 @@ const Portfolio = () => {
             alt={imageAltText}
           />
         </div> */}
+=======
+        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+          {/* <img
+            src={image}
+            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            alt={imageAltText}
+          /> */}
+        </div>
+
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
