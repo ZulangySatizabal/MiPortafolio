@@ -10,7 +10,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import devDotToIcon from "../images/socials/devdotto.svg";
 import envelopeIcon from "../images/socials/envelope.svg";
 import gitHubIcon from "../images/socials/github.svg";
 import instagramIcon from "../images/socials/instagram.svg";
@@ -19,7 +18,7 @@ import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
 
 const Footer = (props) => {
-  const { devDotTo, email, gitHub, instagram, linkedIn, name, primaryColor, twitter, youTube } =
+  const { email, gitHub, instagram, linkedIn, name, primaryColor, twitter, youTube } =
     props;
 
   return (
@@ -48,11 +47,6 @@ const Footer = (props) => {
         {email && (
           <a href={`mailto:${email}`}>
             <img src={envelopeIcon} alt="email" className="socialIcon" />
-          </a>
-        )}
-        {devDotTo && (
-          <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
-            <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
           </a>
         )}
         {gitHub && (
