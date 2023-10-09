@@ -26,7 +26,3 @@
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ¡Gracias por visitar mi portafolio web! Espero que encuentres interesante mi trabajo y mis proyectos. Si tienes alguna pregunta o simplemente quieres saludar, ¡no dudes en ponerte en contacto conmigo!
-
----
-
-*Nota: Asegúrate de reemplazar los marcadores de posición (como `#` en el enlace de tu página web) con los enlaces reales antes de publicar el README en tu repositorio.*
