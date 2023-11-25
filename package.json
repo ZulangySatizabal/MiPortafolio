@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "web portfolio Zulangy Satizabal",
   "source": "src/index.html",
-  "homepage": "https://github.com/ZulangySatizabal/MiPortafolio",
+  "homepage": "https://github.com/ZulangySatizabal/Portafolio-Zulangy-Satizabal",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://ZulangySatizabal.github.io/MiPortafolio'",
+    "build-gh": "parcel build --public-url 'https://ZulangySatizabal.github.io/Portafolio-Zulangy-Satizabal'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
